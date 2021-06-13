@@ -1,0 +1,13 @@
+.content-wrapper {
+	max-width: 1200px;
+	margin: auto;
+	> .content-wrap {
+		border: 2px solid red;
+		display: flex;
+		.content {
+			width: 50%;
+			@include mobile;
+				width: 100%;
+		}
+	}
+}
